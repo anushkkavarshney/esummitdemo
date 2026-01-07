@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -574,4 +577,132 @@ section {
     /* smaller logos for mobile */
     height: 120px;
   }
+}
+
+/*competition 
+section*/
+.competition-section {
+  padding: 90px 40px;
+  text-align: center;
+  color: white;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.competition-title {
+  font-size: 48px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 70px;
+  letter-spacing: 4px;
+  font-family: 'Syncopate', sans-serif;
+  /* text-shadow: 0 0 20px rgba(255, 0, 255, 0.4); */
+}
+
+/* Container */
+.competition-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2.5rem;
+}
+
+/* ATTRACTIVE, PREMIUM CARD */
+.competition-card {
+  width: 33%;
+  min-height: 380px;
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 90px 30px 40px;
+  position: relative;
+  backdrop-filter: blur(10px);
+  /* box-shadow: 0 0 35px rgba(255, 0, 255, 0.1); */
+  transition: all 0.4s ease;
+}
+
+/* Hover animation enhanced */
+.competition-card:hover {
+  transform: translateY(-12px) scale(1.03);
+  /* box-shadow: 20px -20px 45px rgba(255, 0, 255, 0.3); */
+  border-color: rgba(255, 0, 255, 0.4);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+
+/* ICON bubble upgraded */
+.competition-icon {
+  position: absolute;
+  top: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #111;
+  border: 3px solid rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* box-shadow: 
+      0 0 20px rgba(255, 255, 255, 0.05),
+      0 0 35px rgba(255, 0, 255, 0.3); */
+  transition: 0.4s ease;
+}
+
+/* Glow-remove-on-hover */
+.competition-card:hover .competition-icon {
+  border-color: var(--pink-accent);
+  box-shadow: 0 0 35px rgba(255, 0, 255, 0.562);
+}
+
+/* Icon styling */
+.material-icons-outlined {
+  font-size: 42px;
+  color: white;
+}
+
+/* Title */
+.competition-card h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 15px;
+  text-shadow: 0 0 10px rgba(255, 0, 255, 0.4);
+}
+
+/* Description */
+.competition-card p {
+  margin-top: 12px;
+  font-size: 16px;
+  opacity: 0.95;
+  line-height: 1.6;
+}
+
+/* Bullet Points */
+.competition-points {
+  margin-top: 20px;
+  text-align: left;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* Custom bullet lines */
+.competition-points li {
+  margin-bottom: 6px;
+  padding-left: 20px;
+  position: relative;
+  font-size: 15px;
+  opacity: 0.9;
+}
+
+/* Pink dot bullet */
+.competition-points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 8px;
+  height: 8px;
+  background: var(--pink-accent);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--pink-accent);
 }
