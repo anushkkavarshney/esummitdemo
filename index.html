@@ -8,18 +8,25 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syncopate:wght@400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syncopate:wght@400;700&family=Orbitron:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <canvas id="squares-canvas"></canvas>
-<div class="scanlines"></div>
+    <!-- Fixed Background with Grid and Rings -->
+    <div class="background-wrapper">
+        <canvas id="squares-canvas"></canvas>
+        <div class="background-rings">
+            <div class="bg-ring bg-ring-1"></div>
+            <div class="bg-ring bg-ring-2"></div>
+            <div class="bg-ring bg-ring-3"></div>
+            <div class="bg-ring bg-ring-4"></div>
+        </div>
+    </div>
+    
+    <div class="scanlines"></div>
+    
     <nav>
-        
         <div class="logo">E-SUMMIT <span>2026</span></div>
         <div class="hidden lg:flex">
             <a href="#about" class="nav-link">About</a>
@@ -28,12 +35,50 @@
             <a href="#schedule" class="nav-link">Timeline</a>
             <a href="#sponsors" class="nav-link">Partners</a>
         </div>
-        
     </nav>
-<header class="hero">
+
+    <!-- Enhanced Hero Section -->
+    <header class="hero">
         <div class="hero-content">
-            <h2 class="hero-text">Landing page content here</h2>
-            <div class="hero-line"></div>
+            <div class="hero-label">
+                <span class="label-dot"></span>
+                <span class="label-text">IGDTUW PRESENTS</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">LUMINA</span>
+                <span class="title-line-2">E-SUMMIT</span>
+            </h1>
+            <div class="hero-subtitle">
+                <span class="subtitle-text">Illuminate Your Entrepreneurial Journey</span>
+            </div>
+            <div class="hero-details">
+                <div class="detail-item">
+                    <div class="detail-icon">📅</div>
+                    <div class="detail-text">
+                        <span class="detail-label">Date</span>
+                        <span class="detail-value">March 29-30, 2026</span>
+                    </div>
+                </div>
+                <div class="detail-divider"></div>
+                <div class="detail-item">
+                    <div class="detail-icon">📍</div>
+                    <div class="detail-text">
+                        <span class="detail-label">Venue</span>
+                        <span class="detail-value">IGDTUW Campus</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <button class="cta-primary">
+                    <span>Register Now</span>
+                    <svg class="cta-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <button class="cta-secondary">
+                    <span>View Schedule</span>
+                </button>
+            </div>
         </div>
         
         <div class="portal">
@@ -41,79 +86,174 @@
             <div class="ring ring-2"></div>
             <div class="ring ring-3"></div>
             <div class="ring ring-4"></div>
-            <div class="portal-core"></div>
-        </div>
-
-    </header>
-
-    <!-- 2. Content Flow (On Squares Background) -->
-    <section id="about">
-        <div>
-            <!-- About section -->
-        </div>
-        <section id="competitions" class="competition-section">
-            <h2 class="competition-title">COMPETITIONS</h2>
-            <div class="competition-container">
-                <div class="competition-card">
-                    <div class="competition-icon">
-                        <span class="material-icons-outlined">rocket_launch</span>
-                    </div>
-                    <h3>Startathon</h3>
-                    <p>
-                        Pitch your unique startup idea and compete with bright innovators across the campus.
-                        Showcase your business model, revenue plan, and execution strategy.
-                    </p>
-                    <ul class="competition-points">
-                        <li>Team of 1–4 members</li>
-                        <li>Pitch deck required</li>
-                        <li>Judging based on feasibility + innovation</li>
-                    </ul>
-                </div>
-                <div class="competition-card">
-                    <div class="competition-icon">
-                        <span class="material-icons-outlined">analytics</span>
-                    </div>
-                    <h3>Case Study Competition</h3>
-                    <p>
-                        Tackle real industry-level business problems and propose strategic, actionable solutions.
-                        Impress judges with data-driven insights and creativity.
-                    </p>
-                    <ul class="competition-points">
-                        <li>Individual or teams of 2</li>
-                        <li>Industry problem statements</li>
-                        <li>Presentation round for finalists</li>
-                    </ul>
-                </div>
-                <div class="competition-card">
-                    <div class="competition-icon">
-                        <span class="material-icons-outlined">record_voice_over</span>
-                    </div>
-                    <h3>Speaker Events</h3>
-                    <p>
-                        Attend 2 power-packed speaker sessions featuring founders, CEOs,
-                        and industry experts sharing transformative insights.
-                    </p>
-                    <ul class="competition-points">
-                        <li>Open to all registered participants</li>
-                        <li>Interactive Q&A sessions</li>
-                        <li>Networking opportunities</li>
-                    </ul>
+            <div class="portal-core">
+                <div class="core-inner">
+                    <div class="core-glow"></div>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <div class="hero-stats">
+            <div class="stat-item">
+                <div class="stat-number">2000+</div>
+                <div class="stat-label">Participants</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Speakers</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">₹10L</div>
+                <div class="stat-label">Prize Pool</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Enhanced About Section -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-header">
+                <span class="section-tag">
+                    <span class="tag-line"></span>
+                    ABOUT LUMINA
+                </span>
+                <h2 class="section-title">Where Innovation <br/>Meets <span class="title-highlight">Inspiration</span></h2>
+                <p class="section-description">
+                    LUMINA E-Summit 2026 is the flagship entrepreneurship event of IGDTUW, bringing together 
+                    visionaries, innovators, and aspiring entrepreneurs for an immersive two-day experience 
+                    that will redefine your entrepreneurial journey.
+                </p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card card-1">
+                    <div class="card-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M20 5L25 15H35L27.5 22.5L30 32.5L20 25L10 32.5L12.5 22.5L5 15H15L20 5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Industry Leaders</h3>
+                    <p class="card-description">
+                        Interact with successful entrepreneurs, CEOs, and industry veterans who have shaped 
+                        the startup ecosystem.
+                    </p>
+                    <div class="card-footer">
+                        <span class="footer-text">50+ Speakers</span>
+                        <div class="footer-arrow">→</div>
+                    </div>
+                </div>
+
+                <div class="about-card card-2">
+                    <div class="card-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M5 20L15 10L25 20L35 10M5 30L15 20L25 30L35 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Competitive Events</h3>
+                    <p class="card-description">
+                        Participate in hackathons, pitch competitions, and case studies designed to challenge 
+                        your entrepreneurial acumen.
+                    </p>
+                    <div class="card-footer">
+                        <span class="footer-text">Multiple Tracks</span>
+                        <div class="footer-arrow">→</div>
+                    </div>
+                </div>
+
+                <div class="about-card card-3">
+                    <div class="card-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="15" stroke="currentColor" stroke-width="2"/>
+                            <path d="M20 10V20L25 25" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Networking Hub</h3>
+                    <p class="card-description">
+                        Connect with like-minded innovators, potential co-founders, investors, and mentors 
+                        from across the country.
+                    </p>
+                    <div class="card-footer">
+                        <span class="footer-text">2000+ Attendees</span>
+                        <div class="footer-arrow">→</div>
+                    </div>
+                </div>
+
+                <div class="about-card card-4">
+                    <div class="card-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M10 30L20 10L30 30M15 25H25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Workshops & Talks</h3>
+                    <p class="card-description">
+                        Gain insights through interactive workshops, panel discussions, and masterclasses 
+                        on cutting-edge topics.
+                    </p>
+                    <div class="card-footer">
+                        <span class="footer-text">20+ Sessions</span>
+                        <div class="footer-arrow">→</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-stats">
+                <div class="stats-card">
+                    <div class="stats-content">
+                        <div class="stat-block">
+                            <div class="stat-big">₹10L+</div>
+                            <div class="stat-small">Total Prize Money</div>
+                        </div>
+                        <div class="stat-block">
+                            <div class="stat-big">100+</div>
+                            <div class="stat-small">Startup Mentors</div>
+                        </div>
+                        <div class="stat-block">
+                            <div class="stat-big">30+</div>
+                            <div class="stat-small">Partner Organizations</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vision-section">
+                <div class="vision-content">
+                    <div class="vision-quote">"</div>
+                    <p class="vision-text">
+                        LUMINA isn't just an event—it's a movement to empower the next generation of 
+                        entrepreneurs. We believe that every great idea deserves the spotlight, and 
+                        every dreamer deserves a platform to shine.
+                    </p>
+                    <div class="vision-author">
+                        <div class="author-name">E-Cell IGDTUW</div>
+                        <div class="author-role">Organizing Team</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- Competitions Section Placeholder -->
+    <section id="competitions">
+        <div>
+            <!-- Competitions content here -->
+        </div>
+    </section>
+
+    <!-- Speakers Section Placeholder -->
     <section id="speakers">
-        <!-- Speakers -->
+        <!-- Speakers content here -->
     </section>
 
+    <!-- Schedule Section Placeholder -->
     <section id="schedule">
-        <!-- Schedule -->
+        <!-- Schedule content here -->
     </section>
 
+    <!-- Sponsors Section -->
     <section id="sponsors" class="text-center border-t border-white/5">
         <span class="section-tag">Ecosystem Partners</span>
         <h2 class="section-title">SPONSORS</h2>
+        
         <!-- Desktop Sponsors Section -->
         <section class="sponsors-section desktop-only">
             <div class="sponsor-columns-container desktop">
@@ -126,7 +266,6 @@
                         <div class="sponsor-logo"><img src="images/sponsors/kmc.png" alt="Sponsor 4"></div>
                         <div class="sponsor-logo"><img src="images/sponsors/madeeasy.png" alt="Sponsor 5"></div>
                         <div class="sponsor-logo"><img src="images/sponsors/AICPA-CIMA.png" alt="Sponsor 6"></div>
-                        <!-- duplicate for seamless scroll -->
                         <div class="sponsor-logo"><img src="images/sponsors/codegeeks.png" alt="Sponsor 1"></div>
                         <div class="sponsor-logo"><img src="images/sponsors/drishtiias.png" alt="Sponsor 2"></div>
                         <div class="sponsor-logo"><img src="images/sponsors/AICPA-CIMA.png" alt="Sponsor 3"></div>
@@ -145,7 +284,6 @@
                         <div class="sponsor-logo"><img src="images/sponsors/codegeeks.png" alt="Sponsor 9"></div>
                         <div class="sponsor-logo"><img src="images/sponsors/drishtiias.png" alt="Sponsor 10"></div>
                         <div class="sponsor-logo"><img src="images/sponsors/madeeasy.png" alt="Sponsor 11"></div>
-                        <!-- duplicate for seamless scroll -->
                         <div class="sponsor-logo"><img src="images/sponsors/sibilize.png" alt="Sponsor 6"></div>
                         <div class="sponsor-logo"><img src="images/sponsors/AICPA-CIMA.png" alt="Sponsor 7"></div>
                         <div class="sponsor-logo"><img src="images/sponsors/unstop.png" alt="Sponsor 8"></div>
@@ -164,7 +302,6 @@
                         <div class="sponsor-logo"><img src="images/sponsors/madeeasy.png" alt="Sponsor 14"></div>
                         <div class="sponsor-logo"><img src="images/sponsors/sibilize.png" alt="Sponsor 15"></div>
                         <div class="sponsor-logo"><img src="images/sponsors/drishtiias.png" alt="Sponsor 16"></div>
-                        <!-- duplicate for seamless scroll -->
                         <div class="sponsor-logo"><img src="images/sponsors/ECell NSUT.png" alt="Sponsor 11"></div>
                         <div class="sponsor-logo"><img src="images/sponsors/AICPA-CIMA.png" alt="Sponsor 12"></div>
                         <div class="sponsor-logo"><img src="images/sponsors/kmc.png" alt="Sponsor 13"></div>
@@ -172,46 +309,40 @@
                         <div class="sponsor-logo"><img src="images/sponsors/sibilize.png" alt="Sponsor 15"></div>
                         <div class="sponsor-logo"><img src="images/sponsors/drishtiias.png" alt="Sponsor 16"></div>
                     </div>
-
                 </div>
+            </div>
         </section>
 
         <!-- Mobile Sponsors Section -->
         <section class="sponsors-section mobile-only">
             <div class="mobile-sponsor-rows">
-                <!-- Row 1 -->
                 <div class="mobile-row row1">
                     <div class="mobile-row-inner">
                         <div class="sponsor-logo"><img src="images/sponsors/codegeeks.png" alt="Sponsor 1"></div>
                         <div class="sponsor-logo"><img src="images/sponsors/drishtiias.png" alt="Sponsor 2"></div>
                         <div class="sponsor-logo"><img src="images/sponsors/ECell NSUT.png" alt="Sponsor 3"></div>
-                        <!-- Repeat for seamless scroll -->
                         <div class="sponsor-logo"><img src="images/sponsors/codegeeks.png" alt="Sponsor 1"></div>
                         <div class="sponsor-logo"><img src="images/sponsors/drishtiias.png" alt="Sponsor 2"></div>
                         <div class="sponsor-logo"><img src="images/sponsors/ECell NSUT.png" alt="Sponsor 3"></div>
                     </div>
                 </div>
 
-                <!-- Row 2 -->
                 <div class="mobile-row row2">
                     <div class="mobile-row-inner">
                         <div class="sponsor-logo"><img src="images/sponsors/kmc.png" alt="Sponsor 4"></div>
                         <div class="sponsor-logo"><img src="images/sponsors/madeeasy.png" alt="Sponsor 5"></div>
                         <div class="sponsor-logo"><img src="images/sponsors/sibilize.png" alt="Sponsor 6"></div>
-                        <!-- Repeat for seamless scroll -->
                         <div class="sponsor-logo"><img src="images/sponsors/kmc.png" alt="Sponsor 4"></div>
                         <div class="sponsor-logo"><img src="images/sponsors/madeeasy.png" alt="Sponsor 5"></div>
                         <div class="sponsor-logo"><img src="images/sponsors/sibilize.png" alt="Sponsor 6"></div>
                     </div>
                 </div>
 
-                <!-- Row 3 -->
                 <div class="mobile-row row3">
                     <div class="mobile-row-inner">
                         <div class="sponsor-logo"><img src="images/sponsors/unstop.png" alt="Sponsor 7"></div>
                         <div class="sponsor-logo"><img src="images/sponsors/codegeeks.png" alt="Sponsor 8"></div>
                         <div class="sponsor-logo"><img src="images/sponsors/drishtiias.png" alt="Sponsor 9"></div>
-                        <!-- Repeat for seamless scroll -->
                         <div class="sponsor-logo"><img src="images/sponsors/unstop.png" alt="Sponsor 7"></div>
                         <div class="sponsor-logo"><img src="images/sponsors/codegeeks.png" alt="Sponsor 8"></div>
                         <div class="sponsor-logo"><img src="images/sponsors/drishtiias.png" alt="Sponsor 9"></div>
@@ -219,17 +350,14 @@
                 </div>
             </div>
         </section>
-        </div>
     </section>
+
     <!-- Footer Section -->
     <footer class="bg-gray-900 text-gray-500 py-12 relative">
         <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-4 gap-8">
-
-            <!-- Location with Map -->
             <div>
                 <h3 class="text-lg font-semibold mb-4">Location</h3>
                 <div class="flex flex-col space-y-4">
-                    <!-- Map Embed -->
                     <div class="w-full h-40 rounded-lg overflow-hidden shadow-lg">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.3386164064586!2d77.229433!3d28.6655361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd0683919c3b%3A0xf5fc331b74c2b9e2!2sIndira%20Gandhi%20Delhi%20Technical%20University%20for%20Women!5e0!3m2!1sen!2sin!4v1694000000000!5m2!1sen!2sin"
@@ -237,15 +365,12 @@
                             referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
                     </div>
-
-                    <!-- Address + Contact -->
                     <div>
                         <p>Indira Gandhi Delhi Technical University For Women, Kashmere Gate, New Delhi, India</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Company -->
             <div>
                 <h3 class="text-lg font-semibold mb-4">ECell IGDTUW</h3>
                 <ul class="space-y-2">
@@ -253,9 +378,9 @@
                     <li><a href="updates.html" class="hover:text-pink-400 transition">Updates</a></li>
                     <li><a href="blogs.html" class="hover:text-pink-400 transition">Blog</a></li>
                     <li><a href="contact.html" class="hover:text-pink-400 transition">Contact</a></li>
+                </ul>
             </div>
 
-            <!-- Services -->
             <div>
                 <h3 class="text-lg font-semibold mb-4">Services</h3>
                 <ul class="space-y-2">
@@ -266,7 +391,6 @@
                 </ul>
             </div>
 
-            <!-- Social -->
             <div>
                 <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
                 <div class="flex space-x-4 mb-4">
@@ -276,25 +400,21 @@
                     <a href="#" class="hover:text-pink-400"><i class="fab fa-x-twitter"></i></a>
                 </div>
                 <div class="mt-4">
-                    <a href="https://www.instagram.com/ecell.igdtuw/"
-                        class="hover:text-pink-400 transition">Instagram</a>
-                    <br>
-                    <br>
+                    <a href="https://www.instagram.com/ecell.igdtuw/" class="hover:text-pink-400 transition">Instagram</a>
+                    <br><br>
                     <p>+919810823235</p>
                     <br>
                     <p><span class="gmail com">Ecell.igdtu@gmail.com</span></p>
-
                 </div>
             </div>
-
         </div>
 
-        <!-- Footer Bottom -->
         <div class="mt-12 border-t border-gray-700 pt-6 text-center text-sm text-gray-500">
             © 2025 ECell IGDTUW. All rights reserved.
         </div>
     </footer>
-    <script type="module" src="gsap.js"></script>
+    
+    <script src="gsap.js"></script>
 </body>
 
 </html>
