@@ -20,12 +20,14 @@ body {
   font-family: 'Space Grotesk', sans-serif;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  position: relative;
+  z-index: 1;
 }
 
 #squares-canvas {
   position: fixed;
   inset: 0;
-  z-index: -1;
+  z-index: 0;
   pointer-events: none;
 }
 
