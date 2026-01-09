@@ -20,14 +20,12 @@ body {
   font-family: 'Space Grotesk', sans-serif;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  position: relative;
-  z-index: 1;
 }
 
 #squares-canvas {
   position: fixed;
   inset: 0;
-  z-index: 0;
+  z-index: -1;
   pointer-events: none;
 }
 
@@ -1285,15 +1283,4 @@ section {
         grid-template-columns: 1fr;
         padding: 0 20px;
     }
-}
-
-nav, .hero, section, footer {
-  position: relative;
-  z-index: 10;
-}
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation: none !important;
-    transition: none !important;
-  }
 }
