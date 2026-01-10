@@ -328,3 +328,15 @@ document.addEventListener('visibilitychange', () => {
         // Resume animations
     }
 });
+
+const menuBtn = document.getElementById("menuBtn");
+const drawer = document.getElementById("drawer");
+const closeDrawer = document.getElementById("closeDrawer");
+
+menuBtn.addEventListener("click", () => {
+  drawer.classList.add("open");
+});
+
+closeDrawer.addEventListener("click", () => {
+  drawer.classList.remove("open");
+});
