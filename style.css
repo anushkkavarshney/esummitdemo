@@ -3,6 +3,38 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* Update these three blocks in your existing CSS */
+
+.brand .title {
+    font-family: "Great Vibes", cursive;
+    font-weight: 800; /* Extra bold for the logo title */
+    font-size: 14px;
+    letter-spacing: 1.0px;
+    color: #f5f5f5;
+    
+}
+
+.links .nav-text {
+   
+    font-weight: 700; /* Bold as seen in your image */
+    font-size: 1.1rem; /* Adjusting size to match image scale */
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    color: #f5f5f5;
+    letter-spacing: -0.2px; /* Tighter modern spacing */
+}
+
+.cta {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    padding: 10px 16px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, .15);
+    background: linear-gradient(180deg, rgba(255, 255, 255, .08), rgba(255, 255, 255, .04));
+    cursor: pointer;
+    color: #f5f5f5;
+}
 
 :root {
   --pink-accent: rgb(244, 114, 182);
@@ -61,10 +93,10 @@ nav {
 }
 
 .logo {
-  font-family: 'Syncopate', sans-serif;
-  font-weight: 700;
-  font-size: 0.9rem;
-  letter-spacing: 2px;
+    font-family: 'Space Grotesk', sans-serif; /* Changed from Syncopate to match image font */
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
 }
 
 .logo span {
@@ -72,16 +104,17 @@ nav {
 }
 
 .nav-link {
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 2px;
-  color: rgba(255, 255, 255, 0.966);
-  transition: all 0.3s;
-  margin-left: 2rem;
-  text-decoration: none;
-  position: relative;
-  display: inline-block;
+    font-family: 'Space Grotesk', sans-serif; /* Ensures it uses the font from the image */
+    text-transform: none;      /* Image used "About" instead of "ABOUT" */
+    font-size: 1rem;         /* Slightly larger like the image */
+    font-weight: 700;          /* This makes it thick/bold */
+    letter-spacing: -0.5px;    /* Tighter spacing gives it that modern look */
+    color: #ffffff;
+    transition: all 0.3s;
+    margin-left: 2rem;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
 }
 
 .nav-link::after {
