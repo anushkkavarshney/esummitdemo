@@ -699,6 +699,17 @@ nav {
   transform: translateY(-3px);
   text-shadow: 0 0 12px rgba(244, 114, 182, 0.8);
 }
+.footer-stat span {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--pink-accent);
+  text-shadow: 0 0 12px rgba(244,114,182,0.8);
+}
+
+.footer-stat p {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
 
 /* Bottom Bar */
 .footer-bottom {

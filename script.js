@@ -465,3 +465,4 @@ menuBtn.addEventListener("click", () => {
 closeDrawer.addEventListener("click", () => {
   drawer.classList.remove("open");
 });
+
