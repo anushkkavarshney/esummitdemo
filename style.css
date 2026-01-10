@@ -3,8 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* Update these three blocks in your existing CSS */
-
 .brand .title {
     font-family: "Great Vibes", cursive;
     font-weight: 800; /* Extra bold for the logo title */
@@ -62,7 +60,7 @@ body {
 }
 
 /* Scanlines Effect */
-.scanlines {
+/* .scanlines {
   position: fixed;
   inset: 0;
   z-index: 1;
@@ -75,7 +73,7 @@ body {
     transparent 2px
   );
   opacity: 0.3;
-}
+} */
 
 /* Navbar */
 nav {
@@ -487,7 +485,7 @@ nav {
 /* About Section */
 .about-section {
   padding: 8rem 4rem;
-  background: linear-gradient(180deg, #000 0%, #0a0014 50%, #000 100%);
+  /* background: linear-gradient(180deg, #000 0%, #0a0014 50%, #000 100%); */
   position: relative;
 }
 
@@ -968,7 +966,7 @@ section {
 /* COMPETITION SECTION — UNIFORM THEME */
 .competition-section {
     padding: 100px 0;
-    background: #09070f;
+    /* background: #09070f; */
 }
 
 /* HEADER */
@@ -1158,7 +1156,7 @@ section {
 
 .speakers-section {
     padding: 100px 0;
-    background: #09070f;
+    /* background: #09070f; */
 }
 
 /* Header */
